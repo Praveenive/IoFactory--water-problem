@@ -1,0 +1,25 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#chart {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+rect {
+  fill: #3498db;
+}
