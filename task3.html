@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add this to your CSS file or within a <style> tag in your HTML */
+
+body, html {
+  margin-bottom: 100px;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  
+}
+.stars:hover{
+    background-color: black;
+    color: aquamarine;
+    transform: scale(1.2);
+
+}
+.stars {
+  flex: 1;
+  position: relative;
+}
+
+img {
+    transition: transform 0.3s ease;
+  height: 100%;
+  object-fit: cover;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="stars">
+        <img src="images/warren buffet.jpeg" alt="warenbuffet"/>
+    <h5>CEO&FOUNDER  </h5>
+   <h3> Berkshathan Hatheway</h3></div>
+        <div class="stars">    
+        <img class="stars" src="images/elon musk.jpeg" alt="elon musk"/>
+        <h5>CEO&FOUNDER  </h5>
+        <h3> Tesla</h3></div>
+        <div class="stars">
+             <img src="images/download.jpeg" alt="jeff bezzoz"/>
+             <h5>CEO&FOUNDER  </h5>
+             <h3> Amazon</h3></div>
+    </div>
+
+    </div>
+    
+</body>
+</html>
