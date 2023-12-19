@@ -1,0 +1,26 @@
+function maxProfit(timeUnit) {
+  let maxEarnings = 0;
+  let bestSolution = [];
+
+  for (let t = 0; t <= timeUnit; t += 5) {
+    for (let p = 0; p <= timeUnit; p += 4) {
+      for (let c = 0; c <= timeUnit; c += 10) {
+        if (t + p + c <= timeUnit) {
+          const earnings = t / 5 * 1500 + p / 4 * 1000 + c / 10 * 3000;
+
+          if (earnings > maxEarnings) {
+            maxEarnings = earnings;
+            bestSolution = [{ T: t / 5 }, { P: p / 4 }, { C: c / 10 }];
+          }
+        }
+      }
+    }
+  }
+
+  return { Earnings: `$${maxEarnings}`, Solutions: bestSolution };
+}
+
+// Test cases
+console.log(maxProfit(7));
+console.log(maxProfit(8));
+console.log(maxProfit(13));
