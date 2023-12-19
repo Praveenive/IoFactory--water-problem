@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .container {
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .stars {
+      flex: 1;
+      position: relative;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .stars:hover {
+      color: aquamarine;
+      transform: scale(1.1);
+    }
+
+    img {
+      transition: transform 0.5s ease;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10%;
+    }
+
+    h5, h3 {
+      margin: 5px;
+    }
+
+    @media (min-width: 768px) {
+      .stars {
+        flex: 1 1 30%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .stars {
+        flex: 1 1 20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="stars">
+      <img src="images/wa.jpg" alt="warenbuffet"/>
+      <h5>CEO & FOUNDER</h5>
+      <h3>Berkshathan Hatheway</h3>
+    </div>
+    <div class="stars">    
+      <img src="images/elon1.jpg" alt="elon musk"/>
+      <h5>CEO & FOUNDER</h5>
+      <h3>Tesla</h3>
+    </div>
+    <div class="stars">
+      <img src="images/apple.jpg" alt="jeff bezos"/>
+      <h5>CEO & FOUNDER</h5>
+      <h3>Apple</h3>
+    </div>
+  </div>
+</body>
+</html>

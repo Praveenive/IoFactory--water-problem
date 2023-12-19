@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin-bottom: 0px;
+      padding: 0px;
+      font-size: 20px;
+    }
+  
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+  
+    .left-half,
+    .right-half {
+      flex: 1;
+      box-sizing: border-box;
+      padding-bottom: 50px;
+    }
+  
+    .image-container {
+      max-width: 100%;
+      overflow: hidden;
+    }
+  
+    .bottom-container {
+      background-color: rgb(117, 72, 158);
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    .right-half {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+      margin-bottom: 20px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
+    .container {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .container img {
+      max-width: 100%;
+      height: auto; /* Allow the height to adjust based on content */
+      object-fit: cover;
+    }
+  
+    button {
+      display: inline-block;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 50px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    .last {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    @media screen and (max-width: 767px) {
+      .main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="left-half">
+      <div class="image-container">
+        <img src="images/food-truck-party-invitation-menu-template-vector-9227866.jpg" alt="50% image">
+      </div>
+      <div class="bottom-container">
+        <p>Hungry hunters</p>
+        <h1>Taste is so good , Food is a diverse and essential part of human life, providing the necessary nutrients and energy for survival.</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi voluptates est accusamus odit ea, aut nam nemo maiores vero cum officia, veniam dignissimos. Similique fugiat at reiciendis nobis accusantium qui.</p>
+        <button>Click me for More Info ></button>
+      </div>
+    </div>
+    <div class="right-half">
+      <div class="container-wrapper">
+        <div class="container">
+          <img src="images/ice1.jpg" alt=" 1 Description">
+          <h2>Heading 1</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti voluptate facilis quibusdam iste quae ut et quos fugiat assumenda. Eligendi nemo, provident laudantium culpa harum quibusdam quam possimus assumenda magni..</p>
+          <p class="last"><button>Order</button><button>Reject</button></p>
+        </div>
+        <div class="container">
+          <img src="images/ice2.jpg" alt=" 2 Description">
+          <h2>Heading 2</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur id odio recusandae reprehenderit sit dolor cumque temporibus in excepturi minus nihil, odit laboriosam ipsam ea laudantium magni quidem. At, explicabo?.</p>
+          <p class="last"><button>Order</button><button>Reject</button></p>
+        </div>
+      </div>
+      <div class="container-wrapper">
+        <div class="container">
+          <img src="images/ice3.jpg" alt=" 3 Description">
+          <h2>Heading 3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa animi est eius. Ipsa possimus asperiores, a ad ab quibusdam quas illo nostrum quisquam odio expedita aliquid minus facilis rerum?</p>
+          <p class="last"><button>Order</button><button>Reject</button></p>
+        </div>
+        <div class="container">
+          <img src="images/ice4.jpg" alt="4 Description">
+          <h2>Heading 4</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum perspiciatis obcaecati, quaerat ipsa cumque reiciendis! Perferendis nesciunt suscipit amet quaerat sit, ea quidem eius. Beatae nam reiciendis</p>
+          <p class="last"><button>Order</button><button>Reject</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

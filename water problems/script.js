@@ -19,6 +19,7 @@ function computeWater() {
     rect.setAttribute('y', chartHeight - height * 20);
     rect.setAttribute('width', blockWidth);
     rect.setAttribute('height', height * 20);
+    rect.style.fill = 'blue'; // Set the color of the water blocks
     chart.appendChild(rect);
 
     waterStored += height;
@@ -52,5 +53,4 @@ function calculateWaterBlocks(blockHeights) {
   return waterBlocks;
 }
 
-// Initial rendering
 computeWater();

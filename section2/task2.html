@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: 'Roboto', sans-serif;
+   text-decoration: none;
+   border: none;
+   outline: none;
+}
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color)
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--second-bg-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+}
+
+.services h2{
+    margin-bottom: 5rem;
+}
+.services{
+    display: flex;
+     flex-wrap: wrap;
+    margin: 20px;
+}
+.services-diagram {
+            flex: 1 1 100%; /* Take the full width in a single line on smaller screens */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .services-diagram img {
+            max-width: 100%;
+            height: auto;
+        }
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 30px;
+      flex: 1 1 calc(33.333% - 30px);
+
+}
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+   transform: scale(1);
+}
+.services-box i {
+    font-size: 7rem;
+    color:var(--main-color);
+}
+.services h3{
+    font-size: 2.6rem;
+}
+.services p{
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
+}
+
+
+ @media (max-width: 600px) {
+            .services-container {
+                flex: 1 1 100%; /* Take full width on smaller screens */
+                padding-left: 5px;
+            }
+        }
+  
+    </style>
+</head>
+<body>
+    <section  id="services">
+        
+        <div class="services">
+            <div class="services-diagram">
+                <img src="images/machine-removebg-preview.png" alt="machine"/>
+                <img src="images/flag-removebg-preview.png" alt="flag"/>
+                <img src="images/tri.svg" alt="trignametry"/>
+            </div>
+        <div class="services-container"> 
+        <div class="services-box">
+            
+            <i class='bx bx-code-alt'></i>
+            <h3>Javascript</h3><br/>
+            <p>I developed a web application that displays the flags of different countries using the REST Countries API and the Document Object Model (DOM). The goal of this project was to create an interactive and visually appealing interface for users to explore and learn about flags from around the world.</p>
+            <a href="https://incandescent-kleicha-84137a.netlify.app/" target="_blank" class="btn">Rest Countries Flag</a>
+        </div>
+        </div>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Frontend-Development</h3>
+                <p>I developed a web application that allows users to add items to a shopping cart and 
+                    remove them using React. The goal was to create a smooth and intuitive shopping
+                     experience for users, enabling them to easily manage their cart contents.Useerfriendly
+                      websiteand easy accessable and maintance </p>               
+                 <a href="https://bright-bienenstitch-d824a9.netlify.app/" class="btn">Cart Project</a>
+            </div>
+            </div>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Back end Developement</h3>
+                    <p>I developed a web application using Node.js that connects students with mentors, providing a
+                         platform for mentorship and guidance. The goal of this project was to create a platform
+                          where students can seek advice, ask questions, and receive support from experienced mentors
+                           in their respective fields.</p>
+                    <a href="https://student-mentor-7td8-praveenive.vercel.app/stu-men/" target="_blank" class="btn">Student-Mentor</a>
+                </div>
+            </div>
+        </section>
+    
+</body>
+</html>
